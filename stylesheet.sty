@@ -1,0 +1,56 @@
+% PROGRAMMING STYLESHEET
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage[english]{babel}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{cancel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{fancybox, framed} %Used for framed enviornment
+\usepackage[margin=1in]{geometry}
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{color}
+
+
+\pagestyle{fancy}
+\rhead{Markus de Medeiros, 2020}
+
+% Formatting Stuff
+\newcommand{\reading}{\emph}
+\newcommand\fdate[1]{\begin{center}
+    \textbf{#1}
+\end{center}}
+\newcommand\nib[1]{\noindent{\textbf{#1}}}
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defn}{Definition}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{rmk}[thm]{Remark}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
